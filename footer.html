@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+
+	<head>
+		<title>Footer</title>
+		<!--Scripts jQuery/jQuery Mobile-->
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+		<!--Folha de estilo jQuery Mobile-->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css"/>
+	</head>
+
+	<body>
+		<!--Página Apresentação-->
+		<div data-role="page" id="principal">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<h1>Footer</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content" id="page" style="text-align:justify;">
+				<div id="data-id">
+					<p><b>data-id: </b>O rodapé permanece no lugar durante a transição entre as páginas.</p>
+					<a href="#data-id" data-role="button">data-id</a>
+				</div>
+
+				<div id="data-position">
+					<p><b>data-position: </b>Se definir o valor como <i>fixed</i>, o rodapé permanece sempre no fim da página.</p>
+					<a href="#data-position" data-role="button">data-position</a>
+				</div>
+
+				<div id="data-fullscreen">
+					<p><b>data-fullscreen: </b>Se o valor for definido como <i>true</i>, ao tocar na área de conteúdo, o rodapé desaparece para aumentar a visualização da tela.</p>
+					<a href="#data-fullscreen" data-role="button">data-fullscreen</a>
+				</div>
+
+				<div id="data-theme">
+					<p><b>data-theme: </b>Define o esquema de cores para o rodapé. Ele aceita uma única letra entre <i>a</i> e <i>z</i>, que mapeia para uma das amostras incluídas no seu tema. Por padrão, ele herdará a mesma amostra de cor como seu contêiner pai, se não for explicitamente definido.</p>
+					<a href="#data-theme=a" data-role="button">a</a>
+					<a href="#data-theme=b" data-role="button">b</a>
+					<a href="#data-theme=c" data-role="button">c</a>
+					<a href="#data-theme=d" data-role="button">d</a>
+					<a href="#data-theme=e" data-role="button">e</a>
+				</div>
+
+			</div>
+			
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed" data-id="padrao">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<div data-role="page" id="data-id" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>data-id</p>
+				<p>O rodapé permanece no lugar durante a transição entre as páginas.</p>
+			</div>
+			<div data-role="footer" data-position="fixed" data-id="padrao">
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-position" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>data-position="fixed"</p>
+				<p>O rodapé permanece sempre no fim da página.</p>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-fullscreen" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>data-fullscreen="true"</p>
+				<p>Ao tocar na área de conteúdo, o rodapé desaparece para aumentar a visualização da tela.</p>
+			</div>
+			<div data-role="footer" data-position="fixed" data-fullscreen="true">
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-theme=a" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>data-theme="a"</p>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="a">
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+		
+		<div data-role="page" id="data-theme=b" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>data-theme="b"</p>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+		
+		<div data-role="page" id="data-theme=c" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>data-theme="c"</p>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="c">
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+		
+		<div data-role="page" id="data-theme=d" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>data-theme="d"</p>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="d">
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+		
+		<div data-role="page" id="data-theme=e" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>data-theme="e"</p>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="e">
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+	</body>
+
+</html>

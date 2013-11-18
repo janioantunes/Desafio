@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+
+	<head>
+		<title>Dialog</title>
+		<!--Scripts jQuery/jQuery Mobile-->
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+		<!--Folha de estilo jQuery Mobile-->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css"/>
+	</head>
+
+	<body>
+		<!--Página Apresentação-->
+		<div data-role="page" id="principal">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<h1>Dialog</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content" id="page" style="text-align:justify;">
+				<div id="data-close-btn">
+					<p><b>data-close-btn: </b>Posiciona o botão de fechar a caixa de diálogo conforme valores demonstrados abaixo:</p>
+					<a href="#data-close-btn=left" data-rel="dialog" data-role="button">left</a>
+					<a href="#data-close-btn=right" data-rel="dialog" data-role="button">right</a>
+					<a href="#data-close-btn=none" data-rel="dialog" data-role="button">none</a>
+				</div>
+
+				<div id="data-close-btn-text">
+					<p><b>data-close-btn-text: </b>Permite alterar o texto padrão <i>(close)</i>do botão fechar para outro texto personalizado.</p>
+					<a href="#data-close-btn-text-exemplo" data-rel="dialog" data-role="button" >texto</a>
+				</div>
+
+				<div id="data-corners">
+					<p><b>data-corners: </b>Define cantos arredondados para a caixa de diálogo com o valor <i>true</i> e cantos quadrados com o valor <i>false</i>.</p>
+					<a href="#data-corners=true" data-rel="dialog" data-role="button" >true</a>
+					<a href="#data-corners=false" data-rel="dialog" data-role="button" >false</a>
+				</div>
+
+				<div id="data-overlay-theme">
+					<p><b>data-overlay-theme: </b>Diálogos parecem estar flutuando acima de uma camada de sobreposição. Essa sobreposição adota o tema do conteúdo por padrão, mas com o <i>data-overlay-theme</i> valores entre <i>a</i> e <i>z</i> podem ser utilizados para definir outros temas para a camada de sobreposição.</p>
+					<a href="#data-overlay-theme=a" data-rel="dialog" data-role="button" >a</a>
+					<a href="#data-overlay-theme=b" data-rel="dialog" data-role="button" >b</a>
+					<a href="#data-overlay-theme=c" data-rel="dialog" data-role="button" >c</a>
+					<a href="#data-overlay-theme=d" data-rel="dialog" data-role="button" >d</a>
+					<a href="#data-overlay-theme=e" data-rel="dialog" data-role="button" >e</a>
+				</div>
+
+				<div id="data-theme">
+					<p><b>data-theme: </b>Define o esquema de cores para a caixa de diálogo. Ele aceita uma única letra entre <i>a</i> e <i>z</i>, que mapeia para uma das amostras incluídas no seu tema. Por padrão, ele herdará a mesma amostra de cor como seu contêiner pai, se não for explicitamente definido.</p>
+					<a href="#data-theme=a" data-rel="dialog" data-role="button" >a</a>
+					<a href="#data-theme=b" data-rel="dialog" data-role="button" >b</a>
+					<a href="#data-theme=c" data-rel="dialog" data-role="button" >c</a>
+					<a href="#data-theme=d" data-rel="dialog" data-role="button" >d</a>
+					<a href="#data-theme=e" data-rel="dialog" data-role="button" >e</a>
+				</div>
+
+				<div id="data-title">
+					<p><b>data-title: </b>Permite definir um titulo personalizado para a janela da caixa de diálogo, que aparecerá na aba/janela do <i>browser</i>.</p>
+					<a href="#data-title-exemplo" data-rel="dialog" data-role="button" >texto</a>
+				</div>
+
+			</div>
+			
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+		<div data-role="page" id="data-close-btn=left" data-close-btn="left">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-close-btn="left"</i></p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-close-btn=right" data-close-btn="right">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-close-btn="right"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-close-btn=none" data-close-btn="none">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-close-btn="none"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-close-btn-text-exemplo" data-close-btn="left" data-close-btn-text="Fechar">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-close-btn-text</p>
+				<p>Passe o mouse no botão fechar</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-corners=true" data-close-btn="left" data-corners="true">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-corners="true"</p>
+			</div>
+		</div>
+		
+		<div data-role="page" id="data-corners=false" data-close-btn="left" data-corners="false">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-corners="false"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-dom-cache=true" data-close-btn="left" data-dom-cache="true">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-dom-cache="true"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-dom-cache=false" data-close-btn="left" data-dom-cache="false">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-dom-cache="false"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-overlay-theme=a" data-close-btn="left" data-overlay-theme="a">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-overlay-theme="a"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-overlay-theme=b" data-close-btn="left" data-overlay-theme="b">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-overlay-theme="b"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-overlay-theme=c" data-close-btn="left" data-overlay-theme="c">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-overlay-theme="c"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-overlay-theme=d" data-close-btn="left" data-overlay-theme="d">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-overlay-theme="d"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-overlay-theme=e" data-close-btn="left" data-overlay-theme="e">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-overlay-theme="e"</p>
+			</div>
+		</div>
+		
+		<div data-role="page" id="data-theme=a" data-close-btn="left" data-theme="a">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-theme="a"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-theme=b" data-close-btn="left" data-theme="b">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-theme="b"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-theme=c" data-close-btn="left" data-theme="c">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-theme="c"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-theme=d" data-close-btn="left" data-theme="d">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-theme="d"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-theme=e" data-close-btn="left" data-theme="e">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-theme="e"</p>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-title-exemplo" data-close-btn="left" data-title="Título Personalizado">
+			<div data-role="header">
+				<h2>Diálogo</h2>
+			</div>
+			<div data-role="content">
+				<p>data-title</p>
+				<p>Veja o texto na aba do browser</p>
+			</div>
+		</div>
+
+	</body>
+
+</html>

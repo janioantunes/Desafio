@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+
+	<head>
+		<title>Collapsible</title>
+		<!--Scripts jQuery/jQuery Mobile-->
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+		<!--Folha de estilo jQuery Mobile-->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css"/>
+	</head>
+
+	<body>
+		<!--Página Apresentação-->
+		<div data-role="page" id="principal">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<h1>Collapsible</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content" id="page" style="text-align:justify;">
+				<div id="data-collapsed">
+					<p><b>data-collapsed: </b>O dados inciam ocultos com o valor <i>true</i> e visíveis com o valor <i>false</i>.</p>
+					<div data-role="collapsible" data-collapsed="true">
+						<h6>True</h6>
+						<p>Inicia com os dados ocultos.</p>
+					</div>
+
+					<div data-role="collapsible" data-collapsed="false">
+						<h6>False</h6>
+						<p>Inicia com os dados visíveis.</p>
+					</div>
+				</div>
+
+				<div id="data-collapsed-icon">
+					<p><b>data-collapsed-icon: </b>Aplica diferentes ícones aos botões. O botão mostra o ícone definido quando os dados estão ocultos. Os exemplos abaixo demonstram os valores possíveis e os ícones que são aplicados com os valores:</p>
+					<div data-role="collapsible" data-collapsed-icon="home">
+						<h6>home</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="delete">
+						<h6>delete</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="plus">
+						<h6>plus</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="arrow-u">
+						<h6>arrow-u</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="arrow-d">
+						<h6>arrow-d</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="check">
+						<h6>check</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="gear">
+						<h6>gear</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="grid">
+						<h6>grid</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="star">
+						<h6>star</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="custom">
+						<h6>custom</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="arrow-r">
+						<h6>arrow-r</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="arrow-l">
+						<h6>arrow-l</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="minus">
+						<h6>minus</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="refresh">
+						<h6>refresh</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="forward">
+						<h6>forward</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="back">
+						<h6>back</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="alert">
+						<h6>alert</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="info">
+						<h6>info</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+					<div data-role="collapsible" data-collapsed-icon="search">
+						<h6>search</h6>
+						<p>Inicia com o ícone visível.</p>
+					</div>
+				</div>
+
+				<div id="data-content-theme">
+					<p><b>data-content-theme: </b>Define o esquema de cores para o conteúdo relacionado ao botão. Ele aceita uma única letra entre <i>a</i> e <i>z</i>, que mapeia para uma das amostras incluídas no seu tema. Por padrão, ele herdará a mesma amostra de cor como seu contêiner pai, se não for explicitamente definido.</p>
+					<div data-role="collapsible" data-content-theme="a">
+						<h6>a</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-content-theme="b">
+						<h6>b</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-content-theme="c">
+						<h6>c</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-content-theme="d">
+						<h6>d</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-content-theme="e">
+						<h6>e</h6>
+						<p>Exibição de texto.</p>
+					</div>
+				</div>
+
+				<div id="data-expanded-icon">
+					<p><b>data-expanded-icon: </b>Aplica diferentes ícones aos botões. O botão mostra o ícone definido quando os dados estão visíveis. Os exemplos abaixo demonstram os valores possíveis e os ícones que são aplicados com os valores:</p>
+					<div data-role="collapsible" data-expanded-icon="home">
+						<h6>home</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="delete">
+						<h6>delete</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="plus">
+						<h6>plus</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="arrow-u">
+						<h6>arrow-u</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="arrow-d">
+						<h6>arrow-d</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="check">
+						<h6>check</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="gear">
+						<h6>gear</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="grid">
+						<h6>grid</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="star">
+						<h6>star</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="custom">
+						<h6>custom</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="arrow-r">
+						<h6>arrow-r</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="arrow-l">
+						<h6>arrow-l</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="minus">
+						<h6>minus</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="refresh">
+						<h6>refresh</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="forward">
+						<h6>forward</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="back">
+						<h6>back</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="alert">
+						<h6>alert</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="info">
+						<h6>info</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+					<div data-role="collapsible" data-expanded-icon="search">
+						<h6>search</h6>
+						<p>Inicia com o ícone oculto.</p>
+					</div>
+				</div>
+
+				<div id="data-iconpos">
+					<p><b>data-iconpos: </b>Utilizado para definir a posição em que o ícone aparecerá nos botões. Os exemplos abaixo demonstram os valores possíveis e os ícones que são aplicados com os valores:</p>
+					<div data-role="collapsible" data-iconpos="left">
+						<h6>left</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-iconpos="right">
+						<h6>right</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-iconpos="top">
+						<h6>top</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-iconpos="bottom">
+						<h6>bottom</h6>
+						<p>Exibição de texto.</p>
+					</div>
+				</div>
+
+				<div id="data-inset">
+					<p><b>data-inset: </b>Ao definir esta opção para <i>false</i>, o elemento terá uma aparência de largura sem cantos. Se o valor for <i>false</i> para um recipiente dobrável individual, mas que contêiner é parte de um conjunto dobrável, então o valor é herdado do pai conjunto desmontável.</p>
+					<div data-role="collapsible" data-inset="true">
+						<h6>true</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-inset="false">
+						<h6>false</h6>
+						<p>Exibição de texto.</p>
+					</div>
+				</div>
+
+				<div id="data-mini">
+					<p><b>data-mini: </b>Se o valor definido for <i>true</i>, irá mostrar uma versão mais compacta do botão que usa menos altura vertical.</p>
+					<div data-role="collapsible" data-mini="true">
+						<h6>true</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-mini="false">
+						<h6>false</h6>
+						<p>Exibição de texto.</p>
+					</div>
+				</div>
+
+				<div id="data-theme">
+					<p><b>data-theme: </b>Define o esquema de cores para todas as instâncias do botão. Ele aceita uma única letra entre <i>a</i> e <i>z</i>, que mapeia para uma das amostras incluídas no seu tema. Por padrão, ele herdará a mesma amostra de cor como seu contêiner pai, se não for explicitamente definido.</p>
+					<div data-role="collapsible" data-theme="a">
+						<h6>a</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-theme="b">
+						<h6>b</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-theme="c">
+						<h6>c</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-theme="d">
+						<h6>d</h6>
+						<p>Exibição de texto.</p>
+					</div>
+					<div data-role="collapsible" data-theme="e">
+						<h6>e</h6>
+						<p>Exibição de texto.</p>
+					</div>
+				</div>
+			</div>
+		
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

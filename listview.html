@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+
+	<head>
+		<title>Listview</title>
+		<!--Scripts jQuery/jQuery Mobile-->
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+		<!--Folha de estilo jQuery Mobile-->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css"/>
+	</head>
+
+	<body>
+		<!--Página Apresentação-->
+		<div data-role="page" id="principal">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<h1>Listview</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content" id="page" style="text-align:justify;">
+				<div id="data-autodividers">
+					<p><b>data-autodividers: </b>Se o valor for definido como <i>true</i>, cria uma autodivisão, agrupando os itens da lista conforme a sua primeira letra.</p>
+						<a href="#data-autodividers=true" data-role="button" data-count-theme="a">true</a>
+						<a href="#data-autodividers=false" data-role="button" data-count-theme="a">false</a>
+					</ul>
+				</div>
+
+				<div id="data-count-theme">
+					<p><b>data-count-theme: </b>Define o esquema de cores (amostra) para a lista de itens de bolhas de contagem. Ele aceita uma única letra de <i>a</i> a <i>z</i> que mapeia para uma das amostras incluídas no seu tema.</p>
+						<a href="#data-count-theme=a" data-role="button" data-count-theme="a">a</a>
+						<a href="#data-count-theme=b" data-role="button" data-count-theme="b">b</a>
+					</ul>
+				</div>
+
+				<div id="data-divider-theme">
+					<p><b>data-divider-theme: </b>Define o esquema de cores (amostra) para a lista de divisores. Ele aceita uma única letra de <i>a</i> a <i>z</i> que mapeia para uma das amostras incluídas no seu tema.</p>
+						<a href="#data-divider-theme=a" data-role="button">a</a>
+						<a href="#data-divider-theme=b" data-role="button">b</a>
+					</ul>
+				</div>
+
+				<div id="data-filter">
+					<p><b>data-filter: </b>Adiciona uma barra de filtro de pesquisa para <i>listviews</i>.</p>
+						<a href="#data-filter=true" data-role="button">true</a>
+						<a href="#data-filter=false" data-role="button">false</a>
+					</ul>
+				</div>
+
+				<div id="data-filter-placeholder">
+					<p><b>data-filter-placeholder: </b>Permite persolalizar o texto do campo de filtro quando o valor de <i>data-filter</i> for definido como <i>true</i>.</p>
+						<a href="#data-filter-placeholder" data-role="button">placeholder</a>
+					</ul>
+				</div>
+
+				<div id="data-filter-theme">
+					<p><b>data-filter-theme: </b>Define o esquema de cores (amostra) para a barra de filtro de pesquisa. Ele aceita uma única letra de <i>a</i> a <i>z</i> que mapeia para uma das amostras incluídas no seu tema.</p>
+						<a href="#data-filter-theme=a" data-role="button">a</a>
+						<a href="#data-filter-theme=b" data-role="button">b</a>
+					</ul>
+				</div>
+
+				<div id="data-header-theme">
+					<p><b>data-header-theme: </b>Define o esquema de cores (amostra) para a barra de filtro de pesquisa. Ele aceita uma única letra de <i>a</i> a <i>z</i> que mapeia para uma das amostras incluídas no seu tema.</p>
+						<a href="#data-header-theme=a" data-role="button">a</a>
+						<a href="#data-header-theme=b" data-role="button">b</a>
+					</ul>
+				</div>
+data-header-theme	swatch letter (a-z)
+
+data-icon	home | delete | plus | arrow-u | arrow-d | check | gear | grid | star | custom | arrow-r | arrow-l | minus | refresh | forward | back | alert | info | search | false
+data-inset	true | false
+data-split-icon	home | delete | plus | arrow-u | arrow-d | check | gear | grid | star | custom | arrow-r | arrow-l | minus | refresh | forward | back | alert | info | search
+data-split-theme	swatch letter (a-z) - Default "b"
+data-theme	swatch letter (a-z)
+			</div>
+			
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+		<div data-role="page" id="data-autodividers=true" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-count-theme="a">
+					<li><a href="">Alex Wickerham</a></li>
+					<li>Avery Johnson</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+					<li>Christopher Adams</li>
+					<li>Culver James</li>
+					<li>David Walsh</li>
+					<li>Drake Alfred</li>
+					<li>Elizabeth Bacon</li>
+					<li>Emery Parker</li>
+					<li>Enid Voldon</li>
+					<li>Francis Wall</li>
+					<li>Graham Smith</li>
+					<li>Greta Peete</li>
+					<li>Harvey Walls</li>
+					<li>Mike Farnsworth</li>
+					<li>Murray Vanderbuilt</li>
+					<li>Nathan Williams</li>
+					<li>Paul Baker</li>
+					<li>Pete Mason</li>
+					<li>Rod Tarker</li>
+					<li>Sawyer Wakefield</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-autodividers=false" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="false" data-count-theme="a">
+					<li>Alex Wickerham</li>
+					<li>Avery Johnson</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+					<li>Christopher Adams</li>
+					<li>Culver James</li>
+					<li>David Walsh</li>
+					<li>Drake Alfred</li>
+					<li>Elizabeth Bacon</li>
+					<li>Emery Parker</li>
+					<li>Enid Voldon</li>
+					<li>Francis Wall</li>
+					<li>Graham Smith</li>
+					<li>Greta Peete</li>
+					<li>Harvey Walls</li>
+					<li>Mike Farnsworth</li>
+					<li>Murray Vanderbuilt</li>
+					<li>Nathan Williams</li>
+					<li>Paul Baker</li>
+					<li>Pete Mason</li>
+					<li>Rod Tarker</li>
+					<li>Sawyer Wakefield</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-count-theme=a" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-count-theme="a">
+					<li>Alex Wickerham</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-count-theme=b" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-count-theme="b" >
+					<li>Alex Wickerham</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-divider-theme=a" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-divider-theme="a" >
+					<li>Alex Wickerham</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-divider-theme=b" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-divider-theme="b" >
+					<li>Alex Wickerham</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-filter=true" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-filter="true" >
+					<li>Alex Wickerham</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-filter=false" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-filter="false" >
+					<li>Alex Wickerham</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-filter-placeholder" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-filter="true" data-filter-placeholder="Texto personalizado">
+					<li>Alex Wickerham</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-filter-theme=a" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-filter="true" data-filter-theme="a">
+					<li>Alex Wickerham</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-filter-theme=b" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-filter="true" data-filter-theme="b">
+					<li>Alex Wickerham</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-header-theme=a" data-close-btn="left" >
+			<div data-role="header">
+				<a href="#principal" data-position="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers="true" data-filter="true" data-header-theme="a">
+					<li>Alex Wickerham</li>
+					<li>Bob Cabot</li>
+					<li>Caleb Booth</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+	</body>
+
+</html>

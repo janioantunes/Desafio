@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+	<head>
+		<title>Button</title>
+		<!--Scripts jQuery/jQuery Mobile-->
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+		<!--Folha de estilo jQuery Mobile-->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css"/>
+	</head>
+
+	<body>
+		<!--Página Apresentação-->
+		<div data-role="page" id="principal">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<h1>Button</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content" id="page" style="text-align:justify;">
+			
+				<div id="data-corners">
+					<p><b>data-corners: </b>Aplica cantos arredondados aos botões com o valor <i>true</i> e cantos quadrados com o valor <i>false</i>.</p>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-corners="false">false</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-corners="true">true</a>
+				</div>
+
+				<div id="data-icon">
+					<p><b>data-icon: </b>Aplica diferentes ícones aos botões. Os exemplos abaixo demonstram os valores possíveis e os ícones que são aplicados com os valores:</p>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="home">home</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="delete">delete</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="plus">plus</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="arrow-u">arrow-u</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="arrow-d">arrow-d</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="check">check</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="gear">gear</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="grid">grid</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="star">star</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="custom">custom</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="arrow-r">arrow-r</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="arrow-l">arrow-l</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="minus">minus</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="refresh">refresh</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="forward">forward</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="back">back</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="alert">alert</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="info">info</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="search">search</a>
+				</div>
+
+				<div id="data-iconpos">
+					<p><b>data-iconpos: </b>Utilizado como complemento do <i>data-icon</i>. Define a posição em que o ícone aparecerá nos botões. Os exemplos abaixo demonstram os valores possíveis e os ícones que são aplicados com os valores:</p>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="home" data-iconpos="left">left</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="home" data-iconpos="right">right</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="home" data-iconpos="top">top</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="home" data-iconpos="bottom">bottom</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="home" data-iconpos="notext">notext</a>
+				</div>
+
+				<div id="data-iconshadow">
+					<p><b>data-iconshadow: </b>Aplica sombra tema para o ícone do botão se o valor definido for <i>true</i>.</p>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="star" data-iconshadow="true">true</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-icon="star" data-iconshadow="false">false</a>
+				</div>
+
+				<div id="data-inline">
+					<p><b>data-inline: </b>Se definido como <i>true</i>, fará o botão ter a largura determinada pelo texto do botão. Por padrão, o valor é <i>false</i> para que o botão tenha a largura da página, independente do tamanho do deu conteúdo.</p>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-inline="true">true</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-inline="false">false</a>
+				</div>
+
+				<div id="data-mini">
+					<p><b>data-mini: </b>Se o valor definido for <i>true</i>, irá mostrar uma versão mais compacta do botão que usa menos altura vertical.</p>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-mini="true">true</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-mini="false">false</a>
+				</div>
+
+				<div id="data-shadow">
+					<p><b>data-shadow: </b>Aplica o estilo de sombra para o botão se o valor for definido como <i>true</i>.</p>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-shadow="true">true</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-shadow="false">false</a>
+				</div>
+
+				<div id="data-theme">
+					<p><b>data-theme: </b>Define o esquema de cores para todas as instâncias do botão. Ele aceita uma única letra entre <i>a</i> e <i>z</i>, que mapeia para uma das amostras incluídas no seu tema. Por padrão, ele herdará a mesma amostra de cor como seu contêiner pai, se não for explicitamente definido.</p>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-theme="a">a</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-theme="b">b</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-theme="c">c</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-theme="d">d</a>
+					<a href="#popupBasic" data-role="button" data-rel="popup" data-theme="e">e</a>
+				</div>
+
+				<div data-role="popup" id="popupBasic" style="padding:10px 20px;">
+					<h3>Teste</h3>
+				</div>
+
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

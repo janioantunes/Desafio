@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>Tutorial jQuery Mobile</title>
+		<!--Scripts jQuery/jQuery Mobile-->
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+		<!--Folha de estilo jQuery Mobile-->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css"/>
+		<!--Cordova-->
+		<script type="text/javascript" charset="utf-8" src="lib/js/cordova/cordova.js"></script>
+	</head>
+
+	<body>
+		<!--Página Apresentação-->
+		<div data-role="page" id="apresentacao">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<h1>Apresentação</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content" id="page" style="text-align:justify;">
+				<span>
+					Algo muito importante quando desenvolvemos utilizando o <i>jQuery Mobile</i> é a comunicação feita entre o <i>framework</i> e os elementos de nossa página. Foi necessário prover algum método que o <i>jQuery</i> pudesse ter algumas informações a cerca de cada elemento. Para isso os desenvolvedores utilizaram uma funcionalidade nativa do HTML 5, o atributo <code style="font-size:16px;">data-*</code>, este atributo possui a finalidade de guardar informações relativas aquele elemento que está o definindo. Este atributo pode ser utilizado em qualquer elemento da página, desde que esta esteja em HTML 5. O * contido no elemento é chamado de coringa, porque pode ser totalmente customizada por quem está contruindo a página, ou seja, eu posso determinar que um elemento possui o atributo data-titulo, ou outro possua o atributo data-descrição, este método foi construído para que a própria página HTML pudesse guardar certas informações sem a necessidade de uso de uma linguagem de programação <i>back-side.</i>
+				</span>
+				<a href="#tutorial" data-role="button" data-transition="slide">Iniciar tutorial</a>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página Tutorial-->
+		<div data-role="page" id="tutorial">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#apresentacao" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>Tutorial</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<ol data-role="listview">
+					<li><a href="#button" data-transition="slide">data-role="button"</a></li>
+					<li><a href="#controlgroup" data-transition="slide">data-role="controlgroup"</a></li>
+					<li><a href="#collapsible" data-transition="slide">data-role="collapsible"</a></li>
+					<li><a href="#collapsible-set" data-transition="slide">data-role="collapsible-set"</a></li>
+					<li><a href="#dialog" data-transition="slide">data-rel="dialog"</a></li>
+					<li><a href="#content" data-transition="slide">data-role="content"</a></li>
+					<li><a href="#fieldcontain" data-transition="slide">data-role="fieldcontain"</a></li>
+					<li><a href="#footer" data-transition="slide">data-role="footer"</a></li>
+					<li><a href="#header" data-transition="slide">data-role="header"</a></li>
+					<li><a href="#listview" data-transition="slide">data-role="listview"</a></li>
+					<li><a href="#page" data-transition="slide">data-role="page"</a></li>
+					<li><a href="#popup" data-transition="slide">data-role="popup"</a></li>
+					<li><a href="#slider" data-transition="slide">data-role="slider"</a></li>
+				</ol>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+		<!--Página data-role="button"-->
+		<div data-role="page" id="button">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"button"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="button" </p>
+				<p>Utilizado na tag < a href=</p>
+				<p>Os botões são codificados com âncora HTML padrão e elementos de entrada, em seguida, reforçada por jQuery Mobile para torná-los mais atraentes e úteis em um dispositivo móvel.</p>
+				<a href="button.html" data-role="button" data-transition="slide">Exemplos</a>
+				
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+		<!--Página data-role="controlgroup"-->
+		<div data-role="page" id="controlgroup">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"controlgroup"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="controlgroup"</p>
+				<p>Utilizado na tag < fieldset</p>
+				<p>Agrupa um conjunto de checkboxes.</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página data-role="collapsible"-->
+		<div data-role="page" id="collapsible">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"collapsible"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="collapsible"</p>
+				<p>Utilizado na tag <div... </p>
+				<p>Permite criar um bloco dobrável de conteúdo e permite definir um tema para o conteúdo do bloco.</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página data-role="collapsible-set"-->
+		<div data-role="page" id="collapsible-set">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"collapsible-set"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="collapsible-set"</p>
+				<p>Utilizado na tag <div... </p>
+				<p>Agrupa um conjunto de data-role="collapsible"</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página data-role="dialog"-->
+		<div data-role="page" id="dialog">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"dialog"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-rel="dialog"</p>
+				<p>Utilizado na tag < a href=</p>
+				<p>Cria uma página como uma caixa de diálogo. Quando o atributo <i>"dialog"</i> é aplicado, o quadro acrescenta estilos para adicionar cantos arredondados, margens em torno da página e um fundo escuro para fazer o "diálogo" parece ser suspenso acima da página.</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página data-role="content"-->
+		<div data-role="page" id="content">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"content"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="content"</p>
+				<p>Utilizado na tag <div...</p>
+				<p>Define a <i>"div"</i> como sendo a que armazena o conteúdo da página.</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página data-role="fieldcontain"-->
+		<div data-role="page" id="fieldcontain">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"fieldcontain"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="fieldcontain"</p>
+				<p>Utilizado na tag <div...</p>
+				<p>Usado para melhorar o estilo de rótulos e elementos de formulário em telas maiores, pois alinha a entrada lado a lado do rótulo associado.</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página data-role="footer"-->
+		<div data-role="page" id="footer">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"footer"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="footer"</p>
+				<p>Utilizado na tag <div...</p>
+				<p>Define a <i>"div"</i> como sendo a que armazena o rodapé da página.</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página data-role="header"-->
+		<div data-role="page" id="header">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"header"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="header"
+				<p>Utilizado na tag <div...</p>
+				<p>Define a <i>"div"</i> como sendo a que armazena o cabeçalho da página.</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página data-role="listview"-->
+		<div data-role="page" id="listview">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"listview"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="listview"</p>
+				<p>Utilizado na tag <ul...</p>
+				<p>Define uma lista com <i>links</i> para outras listas.</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página data-role="page"-->
+		<div data-role="page" id="page">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"page"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="page"</p>
+				<p>Utilizado na tag <div...</p>
+				<p>Define a <i>"div"</i> como uma pagina, que pode conter cabeçalho, conteudo e rodapé.</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+		
+		<!--Página data-role="popup"-->
+		<div data-role="page" id="popup">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"popup"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="popup"</p>
+				<p>Utilizado na tag <div...</p>
+				<p>Usado para criar um <i>pop-up</i> com comnteúdo em uma div.</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+		<!--Página data-role="slider"-->
+		<div data-role="page" id="slider">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<a href="#tutorial" data-role="button" data-transition="slide" data-direction="reverse">Voltar</a>
+				<h1>"slider"</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content">
+				<p>data-role="slider"</p>
+				<p>Utilizado na tag <select...</p>
+				<p>Usado para criar um interruptor <i>"Flip"</i> binário, que  é um elemento de interface do usuário comum em dispositivos móveis, usados para botões binários (<i>on/off</i> ou <i>true/false</i>)</p>
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+	</body>
+</html>
