@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+	<head>
+		<title>Popup</title>
+		<!--Scripts jQuery/jQuery Mobile-->
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+		<!--Folha de estilo jQuery Mobile-->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css"/>
+		<!--Cordova-->
+		<script type="text/javascript" charset="utf-8" src="lib/js/cordova/cordova.js"></script>
+	</head>
+
+	<body>
+		<!--Página Apresentação-->
+		<div data-role="page" id="principal">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<h1>Popup</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content" id="page" style="text-align:justify;">
+
+				<div id="data-corners">
+					<p><b>data-corners: </b>Define cantos arredondados para os <i>popups</i> com o atributo <i>true</i> e cantos quadrados com o atributo <i>false</i>.</p>
+					<a href="#datacornerstrue" data-rel="popup" data-role="button">true</a>
+					<div data-role="popup" id="datacornerstrue" data-corners="true">
+						<p>Cantos arredondados.<p>
+					</div>
+					<a href="#datacornersfalse" data-rel="popup" data-role="button">false</a>
+					<div data-role="popup" id="datacornersfalse" data-corners="false">
+						<p>Cantos quadrados.<p>
+					</div>
+				</div>
+
+				<div id="data-dismissible">
+					<p><b>data-dismissible: </b>O atributo <i>true</i> define que, se clicar fora do <i>popup</i> ou pressionar <i>ESC</i> enquanto o <i>popup</i> estiver aberto, vai fecha-lo. O atributo <i>false</i> permite fechar o <i>popup</i> somente ao pressionar o botão "voltar".</p>
+					<a href="#datadismissibletrue" data-rel="popup" data-role="button">true</a>
+					<div data-role="popup" id="datadismissibletrue" data-dismissible="true">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datadismissiblefalse" data-rel="popup" data-role="button">false</a>
+					<div data-role="popup" id="datadismissiblefalse" data-dismissible="false">
+						<p>Pressine "voltar" para sair.<p>
+					</div>
+				</div>
+
+				<div id="data-history">
+					<p><b>data-history: </b>O atributo <i>true</i> define se o <i>popup</i> cria um item de histórico do navegador quando se abre. Se definido como <i>false</i>, não vai criar um item de histórico e não vai permitir ser fechado ao pressionar o botão "voltar".</p>
+					<a href="#datahistorytrue" data-rel="popup" data-role="button">true</a>
+					<div data-role="popup" id="datahistorytrue" data-history="true">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datahistoryfalse" data-rel="popup" data-role="button">false</a>
+					<div data-role="popup" id="datahistoryfalse" data-history="false">
+						<p>Pressine "voltar" para sair.<p>
+					</div>
+				</div>
+
+				<div id="data-overlay-theme">
+					<p><b>data-overlay-theme: </b>Define diferentes temas de transparencia ao utilizar temas de <i>a</i> a <i>z</i>.</p>
+					<a href="#dataoverlaythemea" data-rel="popup" data-role="button">a</a>
+					<div data-role="popup" id="dataoverlaythemea" data-overlay-theme="a">
+						<p>Tema A.<p>
+					</div>
+					<a href="#dataoverlaythemeb" data-rel="popup" data-role="button">b</a>
+					<div data-role="popup" id="dataoverlaythemeb" ddata-overlay-theme="b">
+						<p>Tema B.<p>
+					</div>
+					<a href="#dataoverlaythemec" data-rel="popup" data-role="button">c</a>
+					<div data-role="popup" id="dataoverlaythemec" data-overlay-theme="c">
+						<p>Tema C.<p>
+					</div>
+					<a href="#dataoverlaythemed" data-rel="popup" data-role="button">d</a>
+					<div data-role="popup" id="dataoverlaythemed" data-overlay-theme="d">
+						<p>Tema D.<p>
+					</div>
+					<a href="#dataoverlaythemee" data-rel="popup" data-role="button">e</a>
+					<div data-role="popup" id="dataoverlaythemee" data-overlay-theme="e">
+						<p>Tema E.<p>
+					</div>
+
+				</div>
+
+
+			</div>
+<p>
+data-overlay-theme	swatch letter (a-z) - Default "null" (transparent background)
+data-position-to	origin | window | selector - "origin" indicates that the popup is to be centered over the link that opens it. "window" indicates that it is to be centered in the browser window. If you give a jQuery selector, it will be centered over the first element returned by the selector, if that element is visible. Otherwise, it will be centered in the browser window.
+data-shadow	true | false
+data-theme	swatch letter (a-z) | none - Default inherited, "none" sets the popup to transparent
+data-tolerance	30,15,30,15 - Distance from the edges of the window (top, right, bottom, left)
+data-transition	none | transition - The transition to use when making the popup appear/disappear.
+Anchor with a data-rel="popup" opens the popup
+
+data-position-to	origin - Centers the popup over the link that opens it
+jQuery selector - Centers the popup over the specified element
+window - Centers the popup in the window
+data-rel	popup - For opening a popup
+data-transition	fade | flip | flow | pop | slide | slidedown | slidefade | slideup | turn | none - The transition to be used when showing/hiding the popup
+</p>
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

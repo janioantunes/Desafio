@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+
+	<head>
+		<title>Page</title>
+		<!--Scripts jQuery/jQuery Mobile-->
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+		<!--Folha de estilo jQuery Mobile-->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css"/>
+		<!--Cordova-->
+		<script type="text/javascript" charset="utf-8" src="lib/js/cordova/cordova.js"></script>
+	</head>
+
+	<body>
+		<!--Página Apresentação-->
+		<div data-role="page" id="principal">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<h1>Page</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content" id="page" style="text-align:justify;">
+
+				<div id="data-add-back-btn">
+					<p><b>data-add-back-btn: </b>Insere automaticamente o botão "voltar" no cabeçalho da página</p>
+					<a href="#data-add-back-btn=true" data-role="button" data-count-theme="a">true</a>
+					<a href="#data-add-back-btn=false" data-role="button" data-count-theme="a">false</a>
+				</div>
+
+				<div id="data-back-btn-text">
+					<p><b>ddata-back-btn-text: </b>Permite personalizar o texto contido no botão voltar quando utilizado o atributo <i>data-add-back-btn="true"</i></p>
+					<a href="#data-back-btn-text" data-role="button" data-count-theme="a">Exemplo</a>
+				</div>
+
+				<div id="data-back-btn-theme">
+					<p><b>data-back-btn-theme: </b>Permite personalizar o tema do botão voltar quando utilizado os atributos de <i>a</i> a <i>z</i>.</p>
+					<a href="#data-back-btn-theme=a" data-role="button">a</a>
+					<a href="#data-back-btn-theme=b" data-role="button">b</a>
+					<a href="#data-back-btn-theme=c" data-role="button">c</a>
+					<a href="#data-back-btn-theme=d" data-role="button">d</a>
+					<a href="#data-back-btn-theme=e" data-role="button">e</a>
+				</div>
+
+				<div id="data-theme">
+					<p><b>data-theme: </b>Permite personalizar o tema do conteúdo da página quando utilizado os atributos de <i>a</i> a <i>z</i>.</p>
+					<a href="#data-theme=a" data-role="button">a</a>
+					<a href="#data-theme=b" data-role="button">b</a>
+					<a href="#data-theme=c" data-role="button">c</a>
+					<a href="#data-theme=d" data-role="button">d</a>
+					<a href="#data-theme=e" data-role="button">e</a>
+				</div>
+
+				<div id="data-title">
+					<p><b>data-theme: </b>Permite personalizar o título da página que é exibido no <i>browser</i>.</p>
+					<a href="#data-title" data-role="button">Exemplo</a>
+				</div>
+
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+		<div data-role="page" id="data-add-back-btn=true" data-add-back-btn="true">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Exemplo de <i>data-add-back-btn</i> com o valor <i>true</i></p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-add-back-btn=false" data-add-back-btn="false">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Exemplo de <i>data-add-back-btn</i> com o valor <i>false</i></p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-back-btn-text" data-add-back-btn="true" data-back-btn-text="Personalizado">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Texto do botão voltar foi alterado para "Personalizado"</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-back-btn-theme=a" data-add-back-btn="true" data-back-btn-theme="a">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Ver o tema do botão voltar</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-back-btn-theme=b" data-add-back-btn="true" data-back-btn-theme="b">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Ver o tema do botão voltar</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-back-btn-theme=c" data-add-back-btn="true" data-back-btn-theme="c">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Ver o tema do botão voltar</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-back-btn-theme=d" data-add-back-btn="true" data-back-btn-theme="d">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Ver o tema do botão voltar</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-back-btn-theme=e" data-add-back-btn="true" data-back-btn-theme="e">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Ver o tema do botão voltar</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-theme=a" data-add-back-btn="true" data-theme="a">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Exemplo de tema de página</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-theme=b" data-add-back-btn="true" data-theme="b">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Exemplo de tema de página</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-theme=c" data-add-back-btn="true" data-theme="c">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Exemplo de tema de página</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-theme=d" data-add-back-btn="true" data-theme="d">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Exemplo de tema de página</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-theme=e" data-add-back-btn="true" data-theme="e">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Exemplo de tema de página</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="data-title" data-add-back-btn="true" data-title="Título da página">
+			<div data-role="header">
+				<h2>Página</h2>
+			</div>
+			<div data-role="content">
+				<p>Ver o título na página no navegador</p>
+			</div>
+			<div data-role="footer" data-position="fixed" >
+				<h1>Janio L. Antunes</h1>
+			</div>
+		</div>
+
+	</body>
+
+</html>
