@@ -23,7 +23,7 @@
 			<!--Conteúdo-->
 			<div data-role="content" id="page" style="text-align:justify;">
 
-				<div id="data-corners">
+				<div id="datacorners">
 					<p><b>data-corners: </b>Define cantos arredondados para os <i>popups</i> com o atributo <i>true</i> e cantos quadrados com o atributo <i>false</i>.</p>
 					<a href="#datacornerstrue" data-rel="popup" data-role="button">true</a>
 					<div data-role="popup" id="datacornerstrue" data-corners="true">
@@ -35,7 +35,7 @@
 					</div>
 				</div>
 
-				<div id="data-dismissible">
+				<div id="datadismissible">
 					<p><b>data-dismissible: </b>O atributo <i>true</i> define que, se clicar fora do <i>popup</i> ou pressionar <i>ESC</i> enquanto o <i>popup</i> estiver aberto, vai fecha-lo. O atributo <i>false</i> permite fechar o <i>popup</i> somente ao pressionar o botão "voltar".</p>
 					<a href="#datadismissibletrue" data-rel="popup" data-role="button">true</a>
 					<div data-role="popup" id="datadismissibletrue" data-dismissible="true">
@@ -47,7 +47,7 @@
 					</div>
 				</div>
 
-				<div id="data-history">
+				<div id="datahistory">
 					<p><b>data-history: </b>O atributo <i>true</i> define se o <i>popup</i> cria um item de histórico do navegador quando se abre. Se definido como <i>false</i>, não vai criar um item de histórico e não vai permitir ser fechado ao pressionar o botão "voltar".</p>
 					<a href="#datahistorytrue" data-rel="popup" data-role="button">true</a>
 					<div data-role="popup" id="datahistorytrue" data-history="true">
@@ -59,7 +59,7 @@
 					</div>
 				</div>
 
-				<div id="data-overlay-theme">
+				<div id="dataoverlaytheme">
 					<p><b>data-overlay-theme: </b>Define diferentes temas de transparencia ao utilizar temas de <i>a</i> a <i>z</i>.</p>
 					<a href="#dataoverlaythemea" data-rel="popup" data-role="button">a</a>
 					<div data-role="popup" id="dataoverlaythemea" data-overlay-theme="a">
@@ -84,23 +84,115 @@
 
 				</div>
 
+				<div id="datapositionto">
+					<p><b>data-position-to: </b>O parametro <i>origin</i> indica que o <i>popup</i> deve ser centrado sobre o <i>link</i> que o abre. O parametro <i>window</i> indica que ele deve ser centralizado na janela do navegador. O parametro <i>selector</i> será centrado sobre o primeiro elemento retornado pelo seletor, se esse elemento é visível. Caso contrário, ele será centralizado na janela do navegador.</p>
+					<a href="#datapositiontoorigin" data-rel="popup" data-role="button">origin</a>
+					<div data-role="popup" id="datapositiontoorigin" data-position-to="origin">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datapositiontowindow" data-rel="popup" data-role="button">window</a>
+					<div data-role="popup" id="datapositiontowindow" data-position-to="window">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datapositiontoselector" data-rel="popup" data-role="button">selector</a>
+					<div data-role="popup" id="datapositiontoselector" data-position-to="selector">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+
+				</div>
+
+				<div id="datashadow">
+					<p><b>data-shadow: </b>Aplica sombra tema para o <i>popup</i> se o valor definido for <i>true</i>.</p>
+					<a href="#datashadowtrue" data-rel="popup" data-role="button">true</a>
+					<div data-role="popup" id="datashadowtrue" data-shadow="true">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datashadowfalse" data-rel="popup" data-role="button">false</a>
+					<div data-role="popup" id="datashadowfalse" data-shadow="false">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+				</div>
+
+				<div id="datatheme">
+					<p><b>data-theme: </b>Define diferentes temas para o <i>popup</i> ao utilizar temas de <i>a</i> a <i>z</i>.</p>
+					<a href="#datathemea" data-rel="popup" data-role="button">a</a>
+					<div data-role="popup" id="datathemea" data-theme="a">
+						<p>Tema A.<p>
+					</div>
+					<a href="#datathemeb" data-rel="popup" data-role="button">b</a>
+					<div data-role="popup" id="datathemeb" ddata-theme="b">
+						<p>Tema B.<p>
+					</div>
+					<a href="#datathemec" data-rel="popup" data-role="button">c</a>
+					<div data-role="popup" id="datathemec" data-theme="c">
+						<p>Tema C.<p>
+					</div>
+					<a href="#datathemed" data-rel="popup" data-role="button">d</a>
+					<div data-role="popup" id="datathemed" data-theme="d">
+						<p>Tema D.<p>
+					</div>
+					<a href="#datathemee" data-rel="popup" data-role="button">e</a>
+					<div data-role="popup" id="datathemee" data-theme="e">
+						<p>Tema E.<p>
+					</div>
+
+				</div>
+
+				<div id="datatolerance">
+					<p><b>data-tolerance: </b>Define a distância mínima a partir da borda da janela para a borda correspondente do <i>popup</i>. Por padrão, os valores "30,15,30,15" serão utilizados para a distância do topo (<i>top</i>), direita (<i>right</i>), inferior(<i>bottom</i>) e esquerda (<i>left</i>) da janela, respectivamente.</p>
+					<a href="#datatolerance1" data-rel="popup" data-role="button" >30,15,30,15</a>
+					<div data-role="popup" id="datatolerance1" data-tolerance="30,15,30,15">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+				</div>
+
+				<div id="datatransition">
+					<p><b>data-transition: </b>Defien a transição a ser usada ao fazer o <i>popup</i> aparecer / desaparecer, conforme atributos dos exemplos abaixo:</p>
+					<a href="#datatransitionnone" data-rel="popup" data-role="button" >none</a>
+					<div data-role="popup" id="datatransitionnone" data-transition="none">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datatransitionfade" data-rel="popup" data-role="button" >fade</a>
+					<div data-role="popup" id="datatransitionfade" data-transition="fade">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datatransitionflip" data-rel="popup" data-role="button" >flip</a>
+					<div data-role="popup" id="datatransitionflip" data-transition="flip">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datatransitionflow" data-rel="popup" data-role="button" >flow</a>
+					<div data-role="popup" id="datatransitionflow" data-transition="flow">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datatransitionpop" data-rel="popup" data-role="button" >pop</a>
+					<div data-role="popup" id="datatransitionpop" data-transition="pop">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datatransitionslide" data-rel="popup" data-role="button" >slide</a>
+					<div data-role="popup" id="datatransitionslide" data-transition="slide">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datatransitionslidedown" data-rel="popup" data-role="button" >slidedown</a>
+					<div data-role="popup" id="datatransitionslidedown" data-transition="slidedown">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datatransitionslidefade" data-rel="popup" data-role="button" >slidefade</a>
+					<div data-role="popup" id="datatransitionslidefade" data-transition="slidefade">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datatransitionslideup" data-rel="popup" data-role="button" >slideup</a>
+					<div data-role="popup" id="datatransitionslideup" data-transition="slideup">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+					<a href="#datatransitionslideturn" data-rel="popup" data-role="button" >slideturn</a>
+					<div data-role="popup" id="datatransitionslideturn" data-transition="slideturn">
+						<p>Pressine "ESC" para sair.<p>
+					</div>
+				</div>
+
 
 			</div>
-<p>
-data-overlay-theme	swatch letter (a-z) - Default "null" (transparent background)
-data-position-to	origin | window | selector - "origin" indicates that the popup is to be centered over the link that opens it. "window" indicates that it is to be centered in the browser window. If you give a jQuery selector, it will be centered over the first element returned by the selector, if that element is visible. Otherwise, it will be centered in the browser window.
-data-shadow	true | false
-data-theme	swatch letter (a-z) | none - Default inherited, "none" sets the popup to transparent
-data-tolerance	30,15,30,15 - Distance from the edges of the window (top, right, bottom, left)
-data-transition	none | transition - The transition to use when making the popup appear/disappear.
-Anchor with a data-rel="popup" opens the popup
 
-data-position-to	origin - Centers the popup over the link that opens it
-jQuery selector - Centers the popup over the specified element
-window - Centers the popup in the window
-data-rel	popup - For opening a popup
-data-transition	fade | flip | flow | pop | slide | slidedown | slidefade | slideup | turn | none - The transition to be used when showing/hiding the popup
-</p>
 			<!--Rodapé-->
 			<div data-role="footer" data-position="fixed">
 				<h1>Janio L. Antunes</h1>
