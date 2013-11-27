@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+	<head>
+		<title>Slider</title>
+		<!--Scripts jQuery/jQuery Mobile-->
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+		<!--Folha de estilo jQuery Mobile-->
+		<link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css"/>
+		<!--Cordova-->
+		<script type="text/javascript" charset="utf-8" src="lib/js/cordova/cordova.js"></script>
+	</head>
+
+	<body>
+		<!--Página Apresentação-->
+		<div data-role="page" id="principal" data-add-back-btn="true" data-back-btn-text="Voltar">
+
+			<!--Cabeçalho-->
+			<div data-role="header" data-position="fixed">
+				<h1>Slider</h1>
+			</div>
+
+			<!--Conteúdo-->
+			<div data-role="content" id="page" style="text-align:justify;">
+
+				<div id="data-highlight">
+					<p><b>data-highlight: </b>Define um estado ativo ao preencher no caminho da margem esquerda para a alça deslizante quando definido como <i>true</i>.</p>
+					<div id="data-highlight=true">
+						<label><i>data-highlight=true</i></label></br>
+						<select data-role="slider" data-highlight="true">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+					<div id="data-highlight=false">
+						<label><i>data-highlight=false</i></label></br>
+						<select data-role="slider" data-highlight="false">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+				</div>
+
+				<div id="data-mini">
+					<p><b>data-mini: </b>Define o tamanho do elemento a versão mais compacta quando utilizado o parametro <i>true</i>.</p>
+					<div id="data-mini=true">
+						<label><i>data-mini=true</i></label></br>
+						<select data-role="slider" data-mini="true">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+					<div id="data-mini=false">
+						<label><i>data-mini=false</i></label></br>
+						<select data-role="slider" data-mini="false">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+				</div>
+
+				<div id="data-theme">
+					<p><b>data-theme: </b>Define o esquema de cores para o <i>slider<i>. Ele aceita uma única letra entre <i>a</i> e <i>z</i>, que mapeia para uma das amostras incluídas no seu tema. Por padrão, ele herdará a mesma amostra de cor como seu contêiner pai, se não for explicitamente definido.</p>
+					<div id="data-theme=a">
+						<label><i>data-theme="a"</i></label></br>
+						<select data-role="slider" data-theme="a">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+					<div id="data-theme=b">
+						<label><i>data-theme="b"</i></label></br>
+						<select data-role="slider" data-theme="b">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+					<div id="data-theme=c">
+						<label><i>data-theme="c"</i></label></br>
+						<select data-role="slider" data-theme="c">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+					<div id="data-theme=d">
+						<label><i>data-theme="d"</i></label></br>
+						<select data-role="slider" data-theme="d">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+					<div id="data-theme=e">
+						<label><i>data-theme="e"</i></label></br>
+						<select data-role="slider" data-theme="e">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+
+				</div>
+
+				<div id="data-track-theme">
+					<p><b>data-track-theme: </b>Define o esquema de cores para o controle do <i>slider<i>, especificamente. Ele aceita uma única letra entre <i>a</i> e <i>z</i> que mapeia para as amostras incluídas no seu tema.</p>
+					<div id="data-track-theme=a">
+						<label><i>data-track-theme="a"</i></label></br>
+						<select data-role="slider" data-track-theme="a">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+					<div id="data-track-theme=b">
+						<label><i>data-track-theme="b"</i></label></br>
+						<select data-role="slider" data-track-theme="b">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+					<div id="data-track-theme=c">
+						<label><i>data-track-theme="c"</i></label></br>
+						<select data-role="slider" data-track-theme="c">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+					<div id="data-track-theme=d">
+						<label><i>data-track-theme="d"</i></label></br>
+						<select data-role="slider" data-track-theme="d">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+					<div id="data-theme=e">
+						<label><i>data-track-theme="e"</i></label></br>
+						<select data-role="slider" data-track-theme="e">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--Rodapé-->
+			<div data-role="footer" data-position="fixed">
+				<h1>Janio L. Antunes</h1>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
